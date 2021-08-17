@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 100vh; //viewportの高さに対する割合
+    img {
+        width: 100%;
+        height: 110vh;
+        position: absolute; //親要素を基準に絶対的な位置を決める(containerを基準にしている)
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .main-title {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        font-size: 6rem;
+        transform: translate(-50%, -30%);
+    }
+}
+
+nav {
+    width: 100%;
+    position: absolute; //bodyを親要素にしてる?
+    display: flex;
+    padding: 3rem 10rem;
+    justify-content: space-between;
+}
+
+.content {
+    width: 100%;
+    background: rgb(47, 44, 44);
+    min-height: 100vh; //コンテンツ量が画面サイズより大きい場合、heightではなくmin-heightで指定する
+    z-index: 2;
+    position: absolute;
+}
+
+.content-images { 
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 60vh;
+   text-align: center;
+}
+
+.text {
+    padding: 2rem 20rem;
+    font-size: 1.1rem;
+}
+
+
+
+
