@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+    color: #fff;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    padding: 2.2rem 5.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 6rem;
+    transform: translate(-50%, -30%);
+}
+
+.container {
+    height: 100vh;
+}
+
+.container img {
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
